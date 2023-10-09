@@ -16,8 +16,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        {children}
-        <Footer />
+        <div className="h-full">{children}</div>
+        <div className="">
+          <Footer />
+        </div>
       </body>
     </html>
   );
