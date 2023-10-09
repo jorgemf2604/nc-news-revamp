@@ -5,7 +5,9 @@ import { TypeAnimation } from "react-type-animation";
 const Animation = () => {
   return (
     <div>
-      <span className="text-[2rem] font-semibold">Everything about</span>
+      <span className="text-[2rem] text-black font-semibold">
+        Everything about
+      </span>
       <TypeAnimation
         preRenderFirstString={true}
         sequence={[
