@@ -3,6 +3,7 @@ import "./globals.css";
 
 import Footer from "./_components/Footer";
 import Header from "./_components/Header";
+import Providers from "./_providers/Providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,13 +14,17 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <Header />
-        <div className="min-h-full">{children}</div>
-        <div className="mt-auto">
-          <Footer />
-        </div>
+        <Providers>
+          <Header />
+          <div className="border dark:bg-purple-300 min-h-[calc(100vh-80px)]">
+            {children}
+          </div>
+          <div className="mt-auto">
+            <Footer />
+          </div>
+        </Providers>
       </body>
     </html>
   );

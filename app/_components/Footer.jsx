@@ -6,6 +6,7 @@ import { BsGithub } from "react-icons/bs";
 import { BsCalendar2Date } from "react-icons/bs";
 import { useState } from "react";
 import Link from "next/link";
+import ThemeChanger from "./ThemeChanger";
 
 const Footer = () => {
   const [theme, setTheme] = useState("light");
@@ -17,7 +18,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="h-30  md:h-20 bg-black text-white px-8 py-4 z-20">
+    <footer className="h-32  md:h-20 bg-black text-white px-8 py-4 z-20">
       <div className=" h-full flex flex-col items-center md:flex-row md:align-middle md:justify-between md:items-center max-w-7xl gap-2 mx-auto">
         <div className="hover:scale-105 hover:text-white hover:font-semibold transition">
           <Link href="https://github.com/jorgemf2604">
@@ -34,17 +35,7 @@ const Footer = () => {
           <span>{new Date().toDateString()}</span>
         </div>
         <div>
-          <button
-            onClick={toggleTheme}
-            className="flex items-center gap-2 hover:scale-105 hover:text-white hover:font-semibold transition"
-          >
-            {theme === "dark" ? "Dark mode" : "Light mode"}
-            {theme === "dark" ? (
-              <MdOutlineDarkMode size={20} />
-            ) : (
-              <BsSun size={20} />
-            )}
-          </button>
+          <ThemeChanger />
         </div>
       </div>
     </footer>
