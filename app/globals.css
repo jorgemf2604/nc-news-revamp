@@ -8,20 +8,20 @@
 }
 
 html,
-body,
 :root {
-  min-height: 100vh;
+  height: 100%;
 }
 
 body {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 /* nav button */
 .nav-button {
   @apply py-1 px-2 border-2 rounded border-black font-semibold;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
   box-shadow: 3px 3px 1px black;
 }
 
