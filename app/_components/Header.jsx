@@ -16,12 +16,12 @@ const Header = () => {
           <Animation />
         </div>
         <nav className="flex items-center gap-4">
-          <button className="nav-button">
-            <Link href="/">Home</Link>
-          </button>
-          <button className="nav-button">
-            <Link href="/articles">Articles</Link>
-          </button>
+          <Link href="/">
+            <button className="nav-button">Home</button>
+          </Link>
+          <Link href="/articles">
+            <button className="nav-button">Articles</button>
+          </Link>
         </nav>
       </div>
     </header>
