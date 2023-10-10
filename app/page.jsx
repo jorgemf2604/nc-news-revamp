@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Lizard from "@/public/images/lizard.png";
+import Lizard from "@/public/images/lizard2.webp";
 import Link from "next/link";
 
 export default function Home() {
@@ -23,11 +23,12 @@ export default function Home() {
             </button>
           </Link>
         </div>
-        <div className="mt-10">
+        <div className="mt-10 relative w-[220px] h-[403px]">
           <Image
             src={Lizard}
-            width={220}
+            fill={true}
             alt="ink drawing of a lizard climbing"
+            className="object-cover"
           />
         </div>
       </div>

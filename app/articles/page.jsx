@@ -1,6 +1,6 @@
 const Articles = () => {
   return (
-    <div className="h-full pt-20">
+    <div className="h-full pt-20 text-neutral-700">
       <div className="p-8">
         <h2>Articles</h2>
         <p>
