@@ -3,6 +3,11 @@ import { AiFillHeart } from "react-icons/ai";
 
 const ArticleCard = ({ title, topic, author, votes, article_img_url }) => {
   return (
+    // TODO change the article cards to color
+    // TODO link every article with a full article route
+    // TODO add filter by topic
+    // TODO add filter by date, number of votes, number of comments, asc, desc
+    // TODO create full article page: show article, show comments, create a addComment form component, create a delete comment button
     <div className="group relative border-4 border-black p-4 rounded-md dark:bg-neutral-800/60 flex flex-col gap-4 hover:scale-105 hover:dark:bg-white hover:dark:text-neutral-600  hover:bg-neutral-800 hover:text-white transition">
       <div className="h-[250px] relative">
         <Image
