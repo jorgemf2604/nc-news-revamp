@@ -1,6 +1,8 @@
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from "next/headers";
 
+export const dynamic = "force-dynamic";
+
 const Articles = async () => {
   const supabase = createServerComponentClient({ cookies });
   const { data, error } = await supabase.from("articles").select();
