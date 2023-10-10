@@ -1,5 +1,6 @@
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from "next/headers";
+import ArticleCard from "../_components/ArticleCard";
 
 export const dynamic = "force-dynamic";
 
@@ -10,11 +11,11 @@ const Articles = async () => {
   return (
     <div className="h-full pt-20">
       <div className="p-8">
-        <h2>Articles</h2>
-
-        {data.map((article) => (
-          <p key={article.id}>{article.title}</p>
-        ))}
+        <div className="grid gap-8 grid-cols-gallery">
+          {data.map((article) => (
+            <ArticleCard key={article.id} {...article} />
+          ))}
+        </div>
       </div>
     </div>
   );
