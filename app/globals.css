@@ -31,3 +31,17 @@ body {
   translate: 3px 3px;
   box-shadow: none;
 }
+
+/* article mini cards */
+
+.cooking-label {
+  background-color: #f87171;
+}
+
+.football-label {
+  background-color: #fbbf24;
+}
+
+.coding-label {
+  background-color: #06b6d4;
+}
