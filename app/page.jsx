@@ -29,6 +29,7 @@ export default function Home() {
             fill={true}
             alt="ink drawing of a lizard climbing"
             className="object-cover"
+            sizes="(min-width: 980px) 220px, (min-width: 780px) 22.22vw, 220px"
           />
         </div>
       </div>

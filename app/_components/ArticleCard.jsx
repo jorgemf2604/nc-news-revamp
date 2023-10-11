@@ -11,6 +11,7 @@ const ArticleCard = ({ title, topic, author, votes, article_img_url }) => {
     colorLabelClass = "cooking-label";
   }
 
+  // add sizes to lizard image and article cards
   // TODO add filter by topic
   // TODO add filter by date, number of votes, number of comments, asc, desc
   // TODO link every article with a full article route
@@ -23,6 +24,7 @@ const ArticleCard = ({ title, topic, author, votes, article_img_url }) => {
           alt={title}
           fill
           className="object-cover rounded"
+          sizes="(min-width: 2860px) calc(10vw - 75px), (min-width: 2580px) calc(11.15vw - 77px), (min-width: 2300px) calc(12.31vw - 71px), (min-width: 2020px) calc(14.23vw - 75px), (min-width: 1740px) calc(16.54vw - 75px), (min-width: 1460px) calc(20vw - 78px), (min-width: 1160px) calc(25vw - 80px), (min-width: 880px) calc(33.08vw - 80px), (min-width: 600px) calc(50vw - 88px), (min-width: 400px) calc(100vw - 104px), calc(82.5vw - 38px)"
         />
       </div>
       <div>
