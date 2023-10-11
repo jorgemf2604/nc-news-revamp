@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="pt-20">
+    <main className="pt-20 min-h-[calc(100vh-80px)] flex justify-center">
       <div className="p-8 flex flex-col gap-4 items-center justify-center md:flex-row md:gap-16 max-w-7xl mx-auto">
         <div className="flex flex-col gap-10 items-center justify-center">
           <h2 className="text-3xl font-semibold dark:text-black">
