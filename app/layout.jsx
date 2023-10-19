@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Providers>
           <Header />
-          <div className="dark:bg-[#999] min-h-[calc(100vh-80px)]">
+          <div className="dark:bg-[#9723c9] min-h-[calc(100vh-80px)]">
             {children}
           </div>
           <div className="mt-auto">
